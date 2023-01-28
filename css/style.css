@@ -1,25 +1,25 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     border: 1px dotted red;
 }
 
-body{
+body {
     font-family: sans-serif;
 }
 
-nav{
+nav {
     background-color: #255EE9;
 }
 
-.container-centered{
+.container-centered {
     max-width: 800px;
     margin-right: auto;
     margin-left: auto;
 }
 
-#nav-inner{
+#nav-inner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,39 +29,39 @@ nav{
     height: 70px;
 }
 
-#nav-inner ul{
+#nav-inner ul {
     list-style-type: none;
 }
 
-#logo{
+#logo {
     width: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#logo img{
+#logo img {
     width: 100%;
 }
 
-#links{
+#links {
     color: white;
     display: flex;
     align-items: stretch;
 }
 
-#links ul{
+#links ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 34px;
 }
 
-#links li{
+#links li {
     font-size: 0.8em;
 }
 
-#login{
+#login {
     background-color: white;
     height: 2.4em;
     padding-left: 1em;
@@ -69,169 +69,182 @@ nav{
     border-radius: 25px;
 }
 
-header{
+header {
     background-image: url("../img/jumbo.png");
     background-size: cover;
     background-position: bottom;
 }
 
-#jumbo{
+#jumbo {
     display: flex;
     justify-content: center;
     min-height: 400px;
 }
 
-#jumbo-inner{
+#jumbo-inner {
     width: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-h1{
+h1 {
     font-size: 2.3em;
     text-align: center;
     color: white;
     height: 60px;
 }
 
-header p{
+header p {
     color: white;
     line-height: 1.5em;
     text-align: center;
     margin-bottom: 1em;
 }
 
-#btns-div{
+#btns-div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 15px;
 }
 
-.btns{
+.btns {
     font-size: 1em;
     padding: 0.8em;
     border-radius: 25px;
 }
 
-#btn-primary{
+#btn-primary {
     color: black;
     background-color: white;
 }
 
-#btn-secondary{
+#btn-secondary {
     color: white;
     background-color: #23272A;
 }
 
-main section .container-centered{
+main section .container-centered {
     min-height: 300px;
     width: 100%;
-    background-color: yellow;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap:60px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    gap: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-main section:nth-child(even) .container-centered{
+main section:nth-child(even) .container-centered {
     flex-direction: row-reverse;
 }
 
-.h2-descr{
-    background-color: orange;
-    min-width: 30%;
-    max-width: 60%;
+.h2-descr h2{
+    padding-top: 25px;
+    font-size: 2.1em;
+}
+
+.h2-descr div{
+    margin-top: 1em;
+    line-height: 1.6em;
+}
+.h2-descr {
+    width: 37%;
     flex-grow: 1;
 }
 
-.section-image{
-    background-color: orange;
-    height: 300px;
-    width: 400px;
+.section-image {
+    width: 63%;
 }
 
-#last-section .container-centered{
-    padding-left: 10px;
-    padding-right: 10px;
+.section-image img {
+    width: 100%
+}
+
+#last-section .container-centered {
     min-height: 300px;
     width: 100%;
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     align-items: center;
 }
 
-#last-section h2{
-    height: 25px;
-    background-color: orange;
-    width: 100%;
+#last-section p{
+    text-align: center;
+    line-height: 1.6em;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
-#last-section p:first-of-type{
+#last-section h2 {
+    font-size: 2.1em;
+}
+
+#last-section p:first-of-type {
     width: 100%;
     height: 50px;
-    background-color: orange;
 }
 
-#last-section #last-section-image{
+#last-section #last-section-image {
     height: 400px;
     width: 100%;
-    background-color: orange;
+    margin-bottom: 55px;
 }
 
-#last-section #pronto{
-    height: 30px;
-    min-width: 150px;
-    background-color: orange;
+#last-section #pronto {
+    font-size: 1.4em;
+    height: 60px;
+    width: 500px;
+    background-image: url("../img/stars.svg");
+    padding-top: 10px;
     margin-top: 70px;
     margin-bottom: 15px;
+
 }
 
-#last-section button{
-    height: 25px;
-    background-color: orange;
-    width: 100px;
+#last-section button {
+    color: white;
+    background-color: #7289DA;
 }
 
-footer{
+#last-section-image img {
+    width: 100%
+}
+
+footer {
     background-color: #23272A;
     color: white;
 }
 
-#footer-sopra{
+#footer-sopra {
     display: flex;
     flex-direction: row;
     gap: 30px;
     padding-top: 60px;
 }
 
-#footer-left{
+#footer-left {
     min-height: 30px;
     width: 20%;
     background-color: black;
 }
 
-footer h3{
+footer h3 {
     min-height: 10px;
 }
 
-#lingua{
+#lingua {
     min-height: 10px;
 }
 
-#social{
+#social {
     min-height: 10px;
 }
 
-#footer-right{
+#footer-right {
     margin-bottom: 30px;
     background-color: black;
     flex-grow: 1;
@@ -239,15 +252,15 @@ footer h3{
     flex-direction: row;
 }
 
-.footer-link-list{
+.footer-link-list {
     width: 25%
 }
 
-footer li{
+footer li {
     min-height: 10px;
 }
 
-#footer-registrati{
+#footer-registrati {
     width: 100%;
     border-top: 1px solid #738BDC;
     margin-top: 10px;
@@ -257,7 +270,8 @@ footer li{
     padding-bottom: 40px;
 }
 
-#logo-discord, #registrati{
+#logo-discord,
+#registrati {
     background-color: black;
     min-width: 60px;
     min-height: 30px;
