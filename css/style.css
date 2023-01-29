@@ -2,13 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px dotted red;
 }
 
 body {
     font-family: sans-serif;
 }
-
+/*---------------------------------------------nav---------------------------------------------------------------------*/
 nav {
     background-color: #255EE9;
 }
@@ -67,12 +66,15 @@ nav {
     padding-left: 1em;
     padding-right: 1em;
     border-radius: 25px;
+    border: none;
 }
+
+/*---------------------------------------------header------------------------------------------------------*/
 
 header {
     background-image: url("../img/jumbo.png");
     background-size: cover;
-    background-position: bottom;
+    background-position-y:-60px;
 }
 
 #jumbo {
@@ -113,6 +115,7 @@ header p {
     font-size: 1em;
     padding: 0.8em;
     border-radius: 25px;
+    border: none;
 }
 
 #btn-primary {
@@ -125,13 +128,15 @@ header p {
     background-color: #23272A;
 }
 
+/*---------------------------------------------main---------------------------------------------------------------------*/
+
 main section .container-centered {
     min-height: 300px;
     width: 100%;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 60px;
 }
 
@@ -167,8 +172,8 @@ main section:nth-child(even) .container-centered {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     align-items: center;
 }
 
@@ -214,6 +219,8 @@ main section:nth-child(even) .container-centered {
     width: 100%
 }
 
+/*---------------------------------------------footer---------------------------------------------------------------------*/
+
 footer {
     background-color: #23272A;
     color: white;
@@ -228,28 +235,42 @@ footer {
 
 #footer-left {
     min-height: 30px;
-    width: 20%;
-    background-color: black;
+    width: 25%;
 }
 
-footer h3 {
-    min-height: 10px;
+#footer-left h3 {
+    color: #7289DA;
+    font-size: 1.4em;
 }
 
 #lingua {
-    min-height: 10px;
+    margin-top: 1em;
+    font-size: 0.7em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 1em;
 }
 
-#social {
-    min-height: 10px;
+#lingua img{
+    height: 17px;
+}
+
+#footer-left i{
+    margin-right: 1em;
 }
 
 #footer-right {
-    margin-bottom: 30px;
-    background-color: black;
+    margin-bottom: 10px;
     flex-grow: 1;
     display: flex;
     flex-direction: row;
+}
+
+#footer-right h3{
+    font-size: 1em;
+    color: #7289DA;
 }
 
 .footer-link-list {
@@ -257,22 +278,30 @@ footer h3 {
 }
 
 footer li {
-    min-height: 10px;
+    color: white;
+    list-style-type: none;
+    font-size: 0.7em;
+    margin-bottom: 1em;
 }
 
 #footer-registrati {
-    width: 100%;
-    border-top: 1px solid #738BDC;
+    border-top: 1px solid #7289DA;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    padding-top: 15px;
+    padding-top: 16px;
     padding-bottom: 40px;
 }
 
-#logo-discord,
-#registrati {
-    background-color: black;
-    min-width: 60px;
-    min-height: 30px;
+#logo-discord img{height: 75%;}
+
+#registrati{
+    color: white;
+    font-size: 0.7em;
+    border-radius: 25px;
+    height: 2.9em;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #7289DA;
+    border: none;
 }
